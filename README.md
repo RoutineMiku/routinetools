@@ -2,6 +2,12 @@
 
 一个纯静态的 Web 工具站：**文档处理 / 图片处理 / 网络工具 / 软件下载站**，所有工具都在浏览器本地运行，不需要服务器。直接把整个文件夹推到 GitHub / Gitee 仓库，开启 Pages 即可通过仓库网页地址访问。
 
+**正式仓库与访问地址**
+- GitHub 仓库：<https://github.com/RoutineMiku/routinetools>
+- GitHub Pages（正式访问）：<https://routinemiku.github.io/routinetools/>
+- Gitee 仓库：<https://gitee.com/daily-miku/routinetools>
+- Gitee Pages：仓库 → 服务 → Gitee Pages → 选择 `master` 分支 / 根目录 → 启动，启动后访问 <https://daily-miku.gitee.io/routinetools/>
+
 ---
 
 ## 一、本地预览
