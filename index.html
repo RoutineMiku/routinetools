@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="日常工具箱 - 文档处理 / 图片处理 / 网络工具 / 软件下载，powered by RoutineMiku">
+  <title>日常工具箱 · Powered by RoutineMiku</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xterm/xterm@5.5.0/css/xterm.min.css">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-icon">🧰</span>
+        <span class="brand-text">日常工具箱</span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="#tools" class="nav-link active">工具箱</a>
+        <a href="#downloads" class="nav-link">软件下载</a>
+        <a href="#contact" class="nav-link">联系我们</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-badge">⚡ 全部工具 · 浏览器本地运行</div>
+      <h1 class="hero-title">把日常用到的工具<br><span>装进一个箱子</span></h1>
+      <p class="hero-sub" id="heroDesc">文档处理 / 图片处理 / 网络工具 / 软件下载 —— 免安装、免上传，打开即用。</p>
+      <div class="hero-actions">
+        <a href="#tools" class="btn btn-primary">浏览工具 <span>→</span></a>
+        <a href="#downloads" class="btn btn-ghost">下载软件</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b id="statTools">0</b><span>实用工具</span></div>
+        <div class="stat"><b id="statCats">0</b><span>功能分类</span></div>
+        <div class="stat"><b>100%</b><span>本地处理</span></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- 工具箱 -->
+    <section class="section" id="tools">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">工具箱</h2>
+            <p class="section-desc">点击卡片即可使用，所有处理都在你的浏览器里完成</p>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div class="tabs" id="categoryTabs"></div>
+          <div class="search-box">
+            <span>🔍</span>
+            <input type="text" id="toolSearch" placeholder="搜索工具…" autocomplete="off">
+          </div>
+        </div>
+
+        <div id="toolCategories"></div>
+        <div class="empty-state" id="toolEmpty" hidden>没有找到匹配的工具，换个关键词试试～</div>
+      </div>
+    </section>
+
+    <!-- 软件下载站 -->
+    <section class="section section-alt" id="downloads">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">软件下载</h2>
+            <p class="section-desc">自动同步仓库发行版，根据发版说明生成简介与下载排版</p>
+          </div>
+          <span class="sync-badge" id="syncBadge">读取发行版中…</span>
+        </div>
+        <div id="downloadList" class="download-list">
+          <div class="loading-card">正在从仓库读取软件列表…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">联系我们</h2>
+            <p class="section-desc">扫一扫，找到 RoutineMiku 的更多作品</p>
+          </div>
+        </div>
+        <div class="contact-grid" id="contactGrid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">🧰 日常工具箱</div>
+      <p class="footer-note" id="footerNote"></p>
+      <p class="powered">Powered by <strong>RoutineMiku</strong> · 抖音号：RoutineMiku</p>
+    </div>
+  </footer>
+
+  <!-- 工具弹窗 -->
+  <div class="modal" id="toolModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <div class="modal-title-wrap">
+          <span class="modal-icon" id="modalIcon"></span>
+          <div>
+            <h3 id="modalTitle">工具</h3>
+            <p id="modalDesc"></p>
+          </div>
+        </div>
+        <button class="modal-close" data-close aria-label="关闭">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- 轻提示 -->
+  <div class="toast" id="toast" hidden></div>
+
+  <!-- 配置 & 工具注册表 -->
+  <script src="config.js"></script>
+  <script src="js/tools.js"></script>
+  <!-- 公共组件样式 -->
+  <link rel="stylesheet" href="css/tools.css">
+  <!-- 主程序（会按需加载各工具脚本） -->
+  <script src="js/app.js"></script>
+</body>
+</html>
