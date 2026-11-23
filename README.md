@@ -1,12 +1,13 @@
 # 🧰 日常工具箱（RoutineMiku Toolbox）
 
-一个纯静态的 Web 工具站：**文档处理 / 图片处理 / 网络工具 / 软件下载站**，所有工具都在浏览器本地运行，不需要服务器。直接把整个文件夹推到 GitHub / Gitee 仓库，开启 Pages 即可通过仓库网页地址访问。
+一个纯静态的 Web 工具站：**文档处理 / 图片处理 / 网络工具 / 软件下载站**，所有工具都在浏览器本地运行，不需要服务器。把整个文件夹推到 GitHub 仓库并开启 Pages，即可通过仓库网页地址访问。
 
 **正式仓库与访问地址**
 - GitHub 仓库：<https://github.com/RoutineMiku/routinetools>
 - GitHub Pages（正式访问）：<https://routinemiku.github.io/routinetools/>
-- Gitee 仓库：<https://gitee.com/daily-miku/routinetools>
-- Gitee Pages：<https://daily-miku.gitee.io/routinetools/>
+- Gitee 镜像仓库（代码备份）：<https://gitee.com/daily-miku/routinetools>
+
+> 说明：Gitee Pages 静态托管功能已停止运营，因此本站的在线访问统一使用 GitHub Pages；Gitee 仓库仅作为代码镜像备份。
 
 ---
 
@@ -22,15 +23,13 @@ python -m http.server 8080
 
 ---
 
-## 二、部署到 GitHub Pages / Gitee Pages
+## 二、部署到 GitHub Pages
 
-1. 把整个文件夹内容推送到仓库根目录（或 `docs/` 目录）。
-2. **GitHub**：仓库 → Settings → Pages → Source 选择 `main` 分支 / root → 保存。
-   访问地址形如 `https://你的用户名.github.io/仓库名/`。
-3. **Gitee**：仓库 → 服务 → Gitee Pages → 选择分支和目录 → 启动。
-   访问地址形如 `https://你的用户名.gitee.io/仓库名/`。
+1. 把整个文件夹内容推送到 GitHub 仓库根目录（或 `docs/` 目录）。
+2. 仓库 → Settings → Pages → Source 选择 `main` 分支 / root → 保存。
+3. 访问地址形如 `https://你的用户名.github.io/仓库名/`。
 
-> 站点全部使用相对路径，放在仓库子目录下也能正常工作。
+> 站点全部使用相对路径，放在仓库子目录下也能正常工作。Gitee Pages 已停止运营，不再作为部署目标。
 
 ---
 
