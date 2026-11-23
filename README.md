@@ -6,7 +6,7 @@
 - GitHub 仓库：<https://github.com/RoutineMiku/routinetools>
 - GitHub Pages（正式访问）：<https://routinemiku.github.io/routinetools/>
 - Gitee 仓库：<https://gitee.com/daily-miku/routinetools>
-- Gitee Pages：仓库 → 服务 → Gitee Pages → 选择 `master` 分支 / 根目录 → 启动，启动后访问 <https://daily-miku.gitee.io/routinetools/>
+- Gitee Pages：<https://daily-miku.gitee.io/routinetools/>
 
 ---
 
